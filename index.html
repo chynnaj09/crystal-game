@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="game.js">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+         crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+</head>
+<body>
+
+    <div class="header text-center">
+<h1>CRYSTALS COLLECTOR</h1>
+<h3>MAGIC NUMBER:</h3>
+<h3 id="magicNumber"></h3>
+</div>
+   
+<div class="row">
+    <div class="col-lg-12 instructions">
+        <p>You will be given a random number at the start of the game. There are four skull crystals below. By clicking on a skull you will
+        add a specific amount of points to your total score. You win the game by matching your total score to random
+        number, you lose the game if your total score gets above the random number. The value of each skull is hidden from you until you click on it.
+         Each time when the game starts, the game will change the
+        values of each skull.</p>
+    </div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <img class="skullimg img-responsive" id="skull1" src="assets/images/09_IMG_8460_4807047.jpg" alt="Black skull" />
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <img class="skullimg img-responsive" id="skull2" src="assets/images/510BE9th5eL._SY300_QL70_.jpg" alt="Amethyst Skull" />
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <img class="skullimg img-responsive" id="skull3" src="assets/images/7b201ba22cf75c70ea1d021bb4f7c0c7--agate-geode-crystal-skull.jpg" alt="Geode skull" />
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <img class="skullimg img-responsive" id="skull4" src="assets/images/Agate-Crystal-Skull-03.jpg" alt="Crystal Skull" />
+        </div>
+
+        <div class="row text-center">
+            <div class="col-lg-4 total">
+                <h3>TOTAL SCORE:</h3>
+                <h3 id="totalScore"></h3>
+            </div>
+            <div class="col-lg-4 button">
+                <h3 id="playAgain"></h3>
+                <button type="button" class="btn btn-light btn-lg">PLAY AGAIN</button>
+            </div>
+            <div class="col-lg-4 scores">
+                <p class="score">WINS: <span id="wins"></span></p>
+                <p class="score">LOSSES: <span id="losses"></span></p>
+            </div>
+     
+        </div>
+</div>
+    </body>
+</html>

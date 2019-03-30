@@ -1,0 +1,38 @@
+h1, h3{
+color: azure;
+}
+
+p {
+    color: azure;
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px 85px;
+}
+
+body { 
+	min-height: 100vh;
+    background: url("../images/indiana_jones_and_the_kingdom_of_the_crystal_skull_poster.jpg");
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.skullimg {
+	width: 150px;
+    margin: 30px auto;
+    margin-top: 100px;
+}
+
+#playAgain {
+	margin-left: 100px;
+}
+
+.total, .directions, .score {
+	margin: auto;
+}
+
+.btn {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 3px;
+}
