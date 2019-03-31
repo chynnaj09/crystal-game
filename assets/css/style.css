@@ -1,32 +1,60 @@
-h1, h3{
-color: azure;
-}
-
-p {
-    color: azure;
-    margin-top: 80px;
-    text-align: center;
-    padding: 20px 85px;
+html {
+	box-sizing: border-box;
 }
 
 body { 
 	min-height: 100vh;
     background: url("../images/indiana_jones_and_the_kingdom_of_the_crystal_skull_poster.jpg");
-    background-repeat: no-repeat;
-	background-size: cover;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+
+h3 {
+	margin: 20px 0px 10px 0px;
+	letter-spacing: 3px;
+}
+
+.header {
+	padding: 70px 0px 0px 0px;
+	color: azure;
+}
+
+h1, h3, #magicNumber, #totalScore, #wins, #losses, .score {
+	color: azure;
+}
+
+h1 {
+	color: azure;
+	margin: 55px 0px 75px 0px;
+	letter-spacing: 12px;
 }
 
 .skullimg {
 	width: 150px;
-    margin: 30px auto;
-    margin-top: 100px;
+	margin: 30px auto;
 }
+
+p {
+	color: azure;
+	text-align: center;
+	padding: 20px 85px;
+}
+
+.score {
+	padding-top: 30px;
+	margin-bottom: 0;
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+
 
 #playAgain {
-	margin-left: 100px;
+	color: #f3f033;
 }
 
-.total, .directions, .score {
+.total, .scores, .directions {
 	margin: auto;
 }
 
@@ -34,5 +62,6 @@ body {
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
+	color: black;
 	letter-spacing: 3px;
 }

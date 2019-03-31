@@ -10,10 +10,10 @@ $(document).ready(function () {
 
     function newNumbers() {
         magicNumber = Math.floor(Math.random() * 110) + 20;
-        skull1Num = Math.ceil(Math.random() * 12);
-        skull2Num = Math.ceil(Math.random() * 12);
-        skull3Num = Math.ceil(Math.random() * 12);
-        skull4Num = Math.ceil(Math.random() * 12);
+         skull1Num = Math.ceil(Math.random() * 12);
+         skull2Num = Math.ceil(Math.random() * 12);
+         skull3Num = Math.ceil(Math.random() * 12);
+         skull4Num = Math.ceil(Math.random() * 12);
     }
 
     function newGame() {
@@ -21,47 +21,47 @@ $(document).ready(function () {
         totalScore = 0;
         $("#magicNumber").text(magicNumber);
         $("#totalScore").text(totalScore);
-        $("#crystal1").attr("data-crystalvalue", crystal1Num);
-        $("#crystal2").attr("data-crystalvalue", crystal2Num);
-        $("#crystal3").attr("data-crystalvalue", crystal3Num);
-        $("#crystal4").attr("data-crystalvalue", crystal4Num);
+        $("#skull1").attr("data-skullvalue", skull1Num);
+        $("#skull2").attr("data-skullvalue", skull2Num);
+        $("#skull3").attr("data-skullvalue",  skull3Num);
+        $("#skull4").attr("data-skullvalue",  skull4Num);
         $("#wins").text(wins);
         $("#losses").text(losses);
-        $("#winOrLose").text("");
+        $("#playAgain").text("");
 
-        //console.log(crystal1Num, crystal2Num, crystal3Num, crystal4Num);
+       
     }
 
     function youWin() {
-        $("#winOrLose").text("YOU WIN!");
+        $("#playAgain").text("YOU WIN!");
         wins++;
         $("#wins").text(wins);
     }
 
     function youLose() {
-        $("#winOrLose").text("YOU LOSE");
+        $("#playAgain").text("YOU LOSE");
         losses++;
         $("#losses").text(losses);
     }
 
     newGame();
 
-    $(".crystalimg").hover(function () {
+    $(".skullimg").hover(function () {
         $(this).css({ opacity: 0.3 });
     },
         function () {
             $(this).css({ opacity: 1 });
         });
 
-    // Function to add the crystal values together
-    $(".crystalimg").on("click", function () {
+    // Function to add the skulls values together
+    $(".skullimg").on("click", function () {
         if (totalScore >= magicNumber) {
             return;
         }
 
-        var crystalValue = $(this).attr("data-crystalvalue");
-        crystalValue = parseInt(crystalValue);
-        totalScore += crystalValue;
+        var skullValue = $(this).attr("data-skullvalue");
+        skullValue = parseInt(skullValue);
+        totalScore += skullValue;
         $("#totalScore").text(totalScore);
 
         if (totalScore === magicNumber) {
